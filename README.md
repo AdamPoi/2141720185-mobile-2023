@@ -2,7 +2,7 @@
 
 ### NIM : 2141720185
 
-### Nama : 01
+### No Absen : 02
 
 ### Matakuliah : Pemrograman Mobile
 
