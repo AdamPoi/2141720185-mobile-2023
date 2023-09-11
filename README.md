@@ -12,3 +12,4 @@
 | --- | --------------------------------------------------------------------------- |
 | 01  | [Minggu 1 - Hello World menggunakan Dart](week-01/docs/screenshot.md)       |
 | 02  | [Minggu 2 - Pengantar Bahasa Pemrograman Dart](week-02/docs/dokumentasi.md) |
+| 03  | [Minggu 3 - Pengantar Bahasa Pemrograman Dart](week-03/docs/dokumentasi.md) |
