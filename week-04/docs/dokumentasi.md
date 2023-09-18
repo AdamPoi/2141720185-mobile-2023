@@ -514,3 +514,182 @@ void main() {
 ![Alt text](image-19.png)
 
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki. Gantilah salah satu isi record dengan nama dan NIM Anda, lalu dokumentasikan hasilnya dan buat laporannya!
+
+## Tugas 2
+
+Functions dalam bahasa Dart adalah blok kode yang dapat ditambahkan argumen dan parameter dan dapat dieksekusi berulang kali tanpa harus menulis ulang kodenya.
+
+## Tugas 3
+
+- Parameter wajib
+
+```dart
+void fun(params){
+  ...
+}
+
+fun(args)
+```
+
+- Parameter default
+
+```dart
+void fun(params="default"){
+  ...
+}
+
+fun(args) // or fun()
+```
+
+- Parameter named
+
+```dart
+void fun(param1,param2){
+  ...
+}
+
+fun(param1:arg,param2:arg)
+
+```
+
+- Parameter rest
+
+```dart
+void fun(...params){
+  ...
+}
+
+fun(arg1,arg2,arg3)
+
+```
+
+## Tugas 4
+
+Functions sebagai first-class objects di Dart berarti functions diperlakukan sebagai objek biasa yang bisa digunakan sebagai parameter fungsi, nilai balik fungsi, dan disimpan di variable atau properties.
+
+- Function dapat disimpan sebagai variable
+
+```dart
+void main() {
+  var greet = () => print("Hello");
+
+  greet();
+}
+```
+
+- Function sebagai parameter function
+
+```dart
+void sayHello(Function greeting) {
+  greeting();
+}
+
+void main() {
+  sayHello(() => print("Hello"));
+}
+
+```
+
+- Function sebagai return function
+
+```dart
+Function getGreeting() {
+  return () => print("Hello");
+}
+
+void main() {
+  getGreeting()();
+}
+```
+
+## Tugas 5
+
+Anonymous function adalah function yang tidak memiliki nama.
+
+```dart
+void sayHello(Function greeting) {
+  greeting();
+}
+
+void main() {
+  // dapat dipanggil langsung
+  (() => print("Hello"))();
+  // argumen dari function
+  sayHello(() => print("Hai"));
+}
+
+```
+
+## Tugas 6
+
+**Lexical Scope** menentukan akses variable berdarkan blok keberadaannya, dimana variable tersebut hanya dapat diakses oleh blok deklarasinya dan childnya.
+
+```dart
+bool topLevel = true;
+
+void main() {
+  var insideMain = true;
+
+  void myFunction() {
+    var insideFunction = true;
+
+    void nestedFunction() {
+      var insideNestedFunction = true;
+
+      assert(topLevel);
+      assert(insideMain);
+      assert(insideFunction);
+      assert(insideNestedFunction);
+    }
+  }
+}
+```
+
+**Lexical Closure** memiliki akses ke parent scope-nya meski function tersebut dieksekusi di luar scope asalnya.
+
+```dart
+// Returns a function that adds [addBy] to the
+/// function's argument.
+Function makeAdder(int addBy) {
+  return (int i) => addBy + i;
+}
+
+void main() {
+  // Create a function that adds 2.
+  var add2 = makeAdder(2);
+
+  // Create a function that adds 4.
+  var add4 = makeAdder(4);
+
+  assert(add2(3) == 5);
+  assert(add4(3) == 7);
+}
+```
+
+## Tugas 7
+
+- Return null
+
+```dart
+foo() {}
+
+assert(foo() == null);
+```
+
+- Return satu value
+
+```dart
+foo() {
+  return true;
+}
+
+assert(foo() == true);
+```
+
+- Return multiple values (collection)
+
+```dart
+(String, int) foo() {
+  return ('something', 42);
+}
+```
