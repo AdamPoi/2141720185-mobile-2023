@@ -34,3 +34,28 @@
   - Membuat stateless image_widget ![Alt text](image-13.png)
   - Menambahkan widget image_widget pada main ![Alt text](image-11.png)
   - Hasil eksekusi ![Alt text](image-12.png)
+
+### Praktikum 4
+
+- **Cupertino Button dan Loading Bar**
+  - Kode
+    - loading_cupertino.dart![Alt text](image-10.png)
+    - main.dart ![Alt text](image-14.png)
+  - Hasil ![Alt text](image-15.png)
+- **Floating Action Button (FAB)**
+  - Kode
+    - fab_widget.dart ![Alt text](image-17.png)
+    - main.dart![Alt text](image-16.png)
+  - Hasil ![Alt text](image-18.png)
+- **Scaffold Widget**
+  - Kode ![Alt text](image-20.png)
+  - Hasil ![Alt text](image-19.png)
+- **Dialog Widget**
+  - Kode ![Alt text](image-22.png)
+  - Hasil ![Alt text](image-21.png)
+- **Input dan Selection Widget**
+  - Kode ![Alt text](image-24.png)
+  - Hasil ![Alt text](image-23.png)
+- **Date and Time Pickers**
+  - Kode ![Alt text](image-26.png)
+  - Hasil ![Alt text](image-25.png)
