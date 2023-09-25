@@ -19,4 +19,7 @@
 
 ### Praktikum 2
 
--
+- Menyiapkan repository github![Alt text](image-3.png)
+- Melakukan commit dan push![Alt text](image-4.png)
+- Menjalankan project hello_world![Alt text](image-5.png)
+- Mengubah title aplikasi menjadi nama dan nim![Alt text](image-6.png)
