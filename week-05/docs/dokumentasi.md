@@ -60,7 +60,7 @@
   - Kode ![Alt text](image-26.png)
   - Hasil ![Alt text](image-25.png)1
 - **Debugging menggunakan Device android**
-  - Debugging code editor ![Alt text](debugging-device.png)
+  - Debugging code editor ![Alt text](debugging-device.PNG)
   - Debugging di Device![Alt text](run-hp.jpg)
 
 ## Tugas 3
