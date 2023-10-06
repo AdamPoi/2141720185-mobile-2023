@@ -58,7 +58,10 @@
   - Hasil ![Alt text](image-23.png)
 - **Date and Time Pickers**
   - Kode ![Alt text](image-26.png)
-  - Hasil ![Alt text](image-25.png)
+  - Hasil ![Alt text](image-25.png)1
+- **Debugging menggunakan Device android**
+  - Debugging code editor ![Alt text](debugging-device.png)
+  - Debugging di Device![Alt text](run-hp.jpg)
 
 ## Tugas 3
 
