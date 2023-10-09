@@ -26,6 +26,7 @@ void fun2() {
 
 void fun3() {
   bool promoActive = false; // true or false
+  // ignore: dead_code
   var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
   print(nav);
 }

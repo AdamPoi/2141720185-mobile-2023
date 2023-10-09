@@ -7,18 +7,27 @@
 
 ### Praktikum 1
 
+Menambahkan title row
 **Hasil Praktikum**
 ![Alt text](image.png)
 
 ### Praktikum 2
 
+Menambahkan button row
 **Hasil Praktikum**
 ![Alt text](image-1.png)
 
 ### Praktikum 3
 
+Menambahkan deskripsi
 **Hasil Praktikum**
 ![Alt text](image-2.png)
+
+### Praktikum 4
+
+Menambahkan gambar
+**Hasil Praktikum**
+![Alt text](image-3.png)
 
 ## Tugas 2
 
