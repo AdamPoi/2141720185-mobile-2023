@@ -77,8 +77,8 @@ class MyApp extends StatelessWidget {
             children: [
               Image.asset(
                 '../images/kucing.jpeg',
-                width: 600,
-                height: 240,
+                width: 400,
+                height: 300,
                 fit: BoxFit.cover,
               ),
               titleSection,
