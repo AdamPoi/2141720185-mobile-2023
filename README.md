@@ -16,3 +16,4 @@
 | 04  | [Minggu 4 - First Flutter App](week-04/docs/dokumentasi.md)                   |
 | 05  | [Minggu 5 - Widget Dasar](week-05/docs/dokumentasi.md)                        |
 | 06  | [Minggu 7 - Layout ](week-07/docs/dokumentasi.md)                             |
+| 07  | [Minggu 8 - Route & Navigasi ](week-08/docs/dokumentasi.md)                   |
