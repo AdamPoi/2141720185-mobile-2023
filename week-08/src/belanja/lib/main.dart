@@ -13,6 +13,9 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter navigation: Adam Rafi Rezandi | 2141720185',
+      theme: ThemeData(
+        primarySwatch: Colors.orange,
+      ),
       initialRoute: '/',
       routes: {
         '/': (context) => HomePage(),

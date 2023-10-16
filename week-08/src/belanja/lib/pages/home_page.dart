@@ -6,37 +6,37 @@ class HomePage extends StatelessWidget {
     Item(
         name: 'Sugar Laptop',
         price: 5000,
-        picture: 'https://picsum.photos/250?image=1',
+        picture: 'https://picsum.photos/400/300?image=1',
         rating: 5,
         stock: 100),
     Item(
         name: 'Salt',
         price: 2000,
-        picture: 'https://picsum.photos/250?image=2',
+        picture: 'https://picsum.photos/400/300?image=2',
         rating: 4.1,
         stock: 50),
     Item(
         name: 'Pepper',
         price: 3000,
-        picture: 'https://picsum.photos/250?image=3',
+        picture: 'https://picsum.photos/400/300?image=3',
         rating: 3.5,
         stock: 10),
     Item(
         name: 'Soy Sauce',
         price: 1000,
-        picture: 'https://picsum.photos/250?image=4',
+        picture: 'https://picsum.photos/400/300?image=4',
         rating: 4,
         stock: 5),
     Item(
         name: 'Vinegar',
         price: 1500,
-        picture: 'https://picsum.photos/250?image=9',
+        picture: 'https://picsum.photos/400/300?image=5',
         rating: 4.5,
         stock: 3),
     Item(
         name: 'Sauce ',
         price: 500,
-        picture: 'https://picsum.photos/250?image=7',
+        picture: 'https://picsum.photos/400/300?image=6',
         rating: 3.9,
         stock: 100),
   ];
@@ -47,7 +47,10 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Flutter Route & Navigation'),
+        title: const Text(
+          'BukanLapak',
+          style: TextStyle(fontWeight: FontWeight.bold),
+        ),
       ),
       body: Material(
         child: Container(
@@ -55,7 +58,7 @@ class HomePage extends StatelessWidget {
           child: GridView.builder(
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 2,
-                childAspectRatio: 0.7,
+                childAspectRatio: 0.55,
                 crossAxisSpacing: 16,
                 mainAxisSpacing: 16),
             itemCount: items.length,
@@ -63,7 +66,11 @@ class HomePage extends StatelessWidget {
               final item = items[index];
               return InkWell(
                 onTap: () {
-                  Navigator.pushNamed(context, '/item', arguments: item);
+                  Navigator.pushNamed(
+                    context,
+                    '/item',
+                    arguments: item,
+                  );
                 },
                 child: ListCard(item: item),
               );
@@ -71,6 +78,14 @@ class HomePage extends StatelessWidget {
           ),
         ),
       ),
+      bottomNavigationBar: const BottomAppBar(
+          height: 40,
+          color: Colors.orange,
+          child: Center(
+            child: Text(
+              'Adam Rafi Rezandi | 2141720185',
+            ),
+          )),
     );
   }
 }
@@ -86,33 +101,44 @@ class ListCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-        margin: const EdgeInsets.all(0),
-        pegalpeelevation: 8,
+        clipBehavior: Clip.antiAlias,
+        elevation: 8,
         shadowColor: Colors.black,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Hero(
-              tag: 'imageHero',
-              child: Image.network(item.picture, fit: BoxFit.cover),
+              tag: "Item Image",
+              child: Image.network(item.picture,
+                  width: double.infinity, fit: BoxFit.cover),
             ),
             const SizedBox(
-              height: 10,
+              height: 8,
             ),
             Padding(
                 padding: const EdgeInsets.all(8),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       item.name,
                       textAlign: TextAlign.start,
-                      style: const TextStyle(fontSize: 32),
+                      style: const TextStyle(fontSize: 24),
                     ),
-                    Text(
-                      item.price.toString(),
-                      textAlign: TextAlign.start,
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    Text('Rp ${item.price.toString()}',
+                        textAlign: TextAlign.start,
+                        style:
+                            const TextStyle(fontSize: 16, color: Colors.blue)),
+                    const SizedBox(
+                      height: 8,
+                    ),
+                    const Text(
+                      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in molestie mauris. Integer in nisl mattis, luctus lacus at, porttitor orci.',
+                      style: TextStyle(fontSize: 12, color: Colors.blueGrey),
                     ),
                   ],
                 ))
