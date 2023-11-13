@@ -42,14 +42,24 @@ class _FuturePageState extends State<FuturePage> {
           ElevatedButton(
             child: const Text('GO!'),
             onPressed: () {
+              // setState(() {});
+              // getData().then((value) {
+              //   result = value.body.toString().substring(0, 450);
+              //   setState(() {});
+              // }).catchError((_) {
+              //   result = 'An error occurred';
+              //   setState(() {});
+              // });
+
               // count();
-              setState(() {});
-              getData().then((value) {
-                result = value.body.toString().substring(0, 450);
-                setState(() {});
-              }).catchError((_) {
+
+              getNumber().then((value) {
+                result = value.toString();
+                setState(() {
+                  result = value.toString();
+                });
+              }).catchError((e) {
                 result = 'An error occurred';
-                setState(() {});
               });
             },
           ),
@@ -63,6 +73,7 @@ class _FuturePageState extends State<FuturePage> {
     );
   }
 
+  // Praktikum 1
   Future<Response> getData() async {
     const authority = 'www.googleapis.com';
     const path = '/books/v1/volumes/gO5EEAAAQBAJ';
@@ -70,6 +81,7 @@ class _FuturePageState extends State<FuturePage> {
     return http.get(url);
   }
 
+  // Praktikum 2
   Future<int> returnOneAsync() async {
     await Future.delayed(const Duration(seconds: 3));
     return 1;
@@ -93,5 +105,29 @@ class _FuturePageState extends State<FuturePage> {
     setState(() {
       result = total.toString();
     });
+  }
+
+  // Praktikum 3
+  late Completer completer;
+
+  Future getNumber() {
+    completer = Completer<int>();
+    calculate2();
+    return completer.future;
+  }
+
+  Future calculate() async {
+    await Future.delayed(const Duration(seconds: 5));
+    completer.complete(42);
+  }
+
+  calculate2() async {
+    try {
+      await new Future.delayed(const Duration(seconds: 5));
+      completer.complete(42);
+// throw Exception();
+    } catch (_) {
+      completer.completeError({});
+    }
   }
 }
