@@ -45,12 +45,12 @@ class ItemPage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        Icon(Icons.star, color: Colors.yellow),
-                        SizedBox(width: 8),
+                        const Icon(Icons.star, color: Colors.yellow),
+                        const Icon(Icons.star, color: Colors.yellow),
+                        const Icon(Icons.star, color: Colors.yellow),
+                        const Icon(Icons.star, color: Colors.yellow),
+                        const Icon(Icons.star, color: Colors.yellow),
+                        const SizedBox(width: 8),
                         Text(itemArgs.rating.toString(),
                             style: const TextStyle(
                                 fontSize: 16, color: Colors.blueGrey)),

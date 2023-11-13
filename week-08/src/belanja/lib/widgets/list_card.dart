@@ -1,3 +1,6 @@
+import 'package:belanja/models/item.dart';
+import 'package:flutter/material.dart';
+
 class ListCard extends StatelessWidget {
   const ListCard({
     super.key,
