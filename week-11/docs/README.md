@@ -91,7 +91,8 @@
 16. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
     Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
-    > ![Alt text](image-6.png)
+    > ![Alt text](praktikum-8.gif)
+    > Saat tombol di tekan maka akan mengarahkan kita pada `NavigationSecond`. Pada halaman tersebut kita dapat mengubah warna background dengan menekan tombol `red`, `green`, dan `blue` yang nantinnya akan merubah variable `color` pada `NavigationFirst`.
 
 ## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
 
