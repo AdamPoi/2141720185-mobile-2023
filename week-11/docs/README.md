@@ -49,6 +49,8 @@
 
 9. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
 
+   > ![Alt text](../docs/praktikum5.gif)
+
 10. Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
 ## Praktikum 6: Menggunakan Future dengan StatefulWidget
