@@ -64,3 +64,30 @@
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
     > ![Alt text](praktikum6.gif)
     > Ya saya mendapat koordinat GPS walaupun menjalankannya pada browser.
+
+## Praktikum 7: Manajemen Future dengan FutureBuilder
+
+13. Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
+    Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+    > ![Alt text](praktikum7-1.gif)
+    > Ada perbedaan UI dengan praktikum sebelumnya karena pada praktikum sebelumnya kita menggunakan `StatefulWidget` sedangkan pada praktikum ini kita menggunakan `FutureBuilder`.
+
+14. Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+
+## Praktikum 8: Navigation route dengan Future Function
+
+15. Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
+    Silakan ganti dengan warna tema favorit Anda.
+
+16. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+    Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
+
+## Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+
+17. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
+    Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
