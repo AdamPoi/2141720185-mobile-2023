@@ -99,3 +99,5 @@
 17. Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
     Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
+    > ![Alt text](praktikum9.gif)
+    > Pada saat tombol di tekan maka akan muncul dialog yang berisi `red`, `green`, dan `blue` yang nantinnya akan merubah variable `color` pada `NavigationFirst`.
