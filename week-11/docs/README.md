@@ -76,6 +76,8 @@
 
 14. Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+    > ![Alt text](praktikum7-1.gif)
+    > Tidak terdapat perbedaan karena tidak terjadi error.
 
 ## Praktikum 8: Navigation route dengan Future Function
 
