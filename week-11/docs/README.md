@@ -52,6 +52,8 @@
    > ![Alt text](../docs/praktikum5.gif)
 
 10. Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
+    > ![Alt text](../docs/praktikum5.gif)
+    > perbedaannya pada langkah 1 kita menggunakan chaining method sedangkan pada langkah ke 4 kita menggunakan try catch.
 
 ## Praktikum 6: Menggunakan Future dengan StatefulWidget
 
