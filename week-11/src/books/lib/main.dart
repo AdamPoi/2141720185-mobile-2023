@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart';
 import 'package:http/http.dart' as http;
+import 'package:async/async.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,7 +35,7 @@ class _FuturePageState extends State<FuturePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Back from the Future'),
+        title: const Text('Back from the Future Adam'),
       ),
       body: Center(
         child: Column(children: [
@@ -53,14 +54,16 @@ class _FuturePageState extends State<FuturePage> {
 
               // count();
 
-              getNumber().then((value) {
-                result = value.toString();
-                setState(() {
-                  result = value.toString();
-                });
-              }).catchError((e) {
-                result = 'An error occurred';
-              });
+              // getNumber().then((value) {
+              //   result = value.toString();
+              //   setState(() {
+              //     result = value.toString();
+              //   });
+              // }).catchError((e) {
+              //   result = 'An error occurred';
+              // });
+
+              return returnFG();
             },
           ),
           const Spacer(),
@@ -129,5 +132,22 @@ class _FuturePageState extends State<FuturePage> {
     } catch (_) {
       completer.completeError({});
     }
+  }
+
+  void returnFG() {
+    FutureGroup<int> futureGroup = FutureGroup<int>();
+    futureGroup.add(returnOneAsync());
+    futureGroup.add(returnTwoAsync());
+    futureGroup.add(returnThreeAsync());
+    futureGroup.close();
+    futureGroup.future.then((List<int> value) {
+      int total = 0;
+      for (var element in value) {
+        total += element;
+      }
+      setState(() {
+        result = total.toString();
+      });
+    });
   }
 }
