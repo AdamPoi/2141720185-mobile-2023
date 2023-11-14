@@ -43,6 +43,8 @@
 
 8. Jelaskan maksud perbedaan kode langkah 1 dan 4!
 
+> Perbedaannya pada kode langkah satu FutureGroup menggunakan dari package async sedangkakan future.wait menggunakan dari package dart:async.
+
 ## Praktikum 5: Menangani Respon Error pada Async Code
 
 9. Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
