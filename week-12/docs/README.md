@@ -58,3 +58,13 @@
    > Fungsi dari langkah 2 untuk menginisialisasi stream.
    > Fungsi dari langkah 6 untuk mengehntikan streaming menerima data
    > Fungsi dari langkah 8 untuk menginisilaisasi nilai random dan menghandle error pada stream.
+
+# Praktikum 5: Multiple stream subscriptions
+
+10. Jelaskan mengapa error itu bisa terjadi ?
+    > Error terjadi karena stream telan menghandle satu `listener` yaitu `subscription`, tetapi `subscription2` mencoba untuk listen maka akan menghasilkan error.
+11. Jelaskan mengapa hal itu bisa terjadi ?
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+    Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
+    > ![Alt text](soal11.gif)
+    > Hal itu terjadi karena terdapat dua listeners yang berbeda yaitu `subscription` dan `subscription2` yang menghandle stream yang sama sehingga akan `values` akan diubah oleh dua `listener` tersebut yang pada kasus ini perubahannya sama.
