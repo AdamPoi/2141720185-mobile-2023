@@ -31,10 +31,10 @@ class _StreamHomePageState extends State<StreamHomePage> {
   int lastNumber = 0;
   late StreamController numberStreamController;
   late NumberStream numberStream;
-  Color bgColor = Colors.blueGrey;
-  late ColorStream colorStream;
+  late StreamTransformer transformer;
+  // Color bgColor = Colors.blueGrey;
+  // late ColorStream colorStream;
 
-  @override
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,7 +62,30 @@ class _StreamHomePageState extends State<StreamHomePage> {
     numberStream = NumberStream();
     numberStreamController = numberStream.controller;
     Stream stream = numberStreamController.stream;
+
+    // Praktikum 2
+    /*
     stream.listen((event) {
+      setState(() {
+        lastNumber = event;
+      });
+    }).onError((error) {
+      setState(() {
+        lastNumber = -1;
+      });
+    });
+    super.initState();
+    */
+    transformer = StreamTransformer<int, int>.fromHandlers(
+        handleData: (value, sink) {
+          sink.add(value * 10);
+        },
+        handleError: (error, trace, sink) {
+          sink.add(-1);
+        },
+        handleDone: (sink) => sink.close());
+
+    stream.transform(transformer).listen((event) {
       setState(() {
         lastNumber = event;
       });
@@ -87,7 +110,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
     // numberStream.addError();
   }
 
-  // Soal 4
+  // Praktikum 1
   /* @override
   void initState() {
     super.initState();
@@ -102,8 +125,6 @@ changeColor() async {
       });
     }
   }
-  */
-
   void changeColor() async {
     colorStream.getColors().listen((eventColor) {
       setState(() {
@@ -111,4 +132,5 @@ changeColor() async {
       });
     });
   }
+  */
 }

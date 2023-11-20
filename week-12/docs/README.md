@@ -27,6 +27,8 @@
 
    > Perbedaannya adalah ketika terdapat perintah berikutnya `await for` akan menunggu stream untuk selesai. Sedangkan `listen` bisa mengekseskusi perintah lanjut seperti method-chaining.
 
+# Praktikum 2: Stream controllers dan sinks
+
 6. Jelaskan maksud kode langkah 8 dan 10 tersebut!
    Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
    Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
@@ -38,3 +40,11 @@
    Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
    Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
    > Kode langkah 13 sampai 15 digunakan untuk menghandle error pada `stream` melalui fungsi `addError()` pada stream. WKode `onError()` digunakan untuk menghandle error `stream`. Sedangkan `numberStream.addError()` digunakan untuk menginisialisasi error pada `stream`.
+
+# Praktikum 3: Injeksi data ke streams
+
+8. Jelaskan maksud kode langkah 1-3 tersebut!
+   Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+   Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
+   > ![Alt text](soal8.gif)
+   > Maksud dari kode langkah 1-3 digunakanan untuk merubah data pada saat `stream`. Nah pada kode tersebut `number` akan dikalikan `10` apabila mendapatkan data dan bernilai `-1` apabila terjadi error.
