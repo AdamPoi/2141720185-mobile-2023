@@ -24,4 +24,17 @@
 
 5. Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
    Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
+
    > Perbedaannya adalah ketika terdapat perintah berikutnya `await for` akan menunggu stream untuk selesai. Sedangkan `listen` bisa mengekseskusi perintah lanjut seperti method-chaining.
+
+6. Jelaskan maksud kode langkah 8 dan 10 tersebut!
+   Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+   Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
+
+   > ![Alt text](soal6.gif)
+   > Pada Langkah 8 digunakan untuk menginisialiasi `stream` baru yakni `NumberStream`. Sedangkan pada langkah 10 digunakan untuk mengenerate random number lalu menambahkannya ke `stream` menggunakan `sink.add()`.
+
+7. Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+   Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+   Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
+   >
