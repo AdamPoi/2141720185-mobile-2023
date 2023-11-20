@@ -24,4 +24,4 @@
 
 5. Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
    Lakukan commit hasil jawaban Soal 5 dengan pesan "W13: Jawaban Soal 5"
-   >
+   > Perbedaannya adalah ketika terdapat perintah berikutnya `await for` akan menunggu stream untuk selesai. Sedangkan `listen` bisa mengekseskusi perintah lanjut seperti method-chaining.
