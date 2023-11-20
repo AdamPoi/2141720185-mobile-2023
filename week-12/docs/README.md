@@ -48,3 +48,13 @@
    Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
    > ![Alt text](soal8.gif)
    > Maksud dari kode langkah 1-3 digunakanan untuk merubah data pada saat `stream`. Nah pada kode tersebut `number` akan dikalikan `10` apabila mendapatkan data dan bernilai `-1` apabila terjadi error.
+
+# Praktikum 4: Subscribe ke stream events
+
+9. Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+   Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+   Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
+   > ![Alt text](soal9.gif)
+   > Fungsi dari langkah 2 untuk menginisialisasi stream.
+   > Fungsi dari langkah 6 untuk mengehntikan streaming menerima data
+   > Fungsi dari langkah 8 untuk menginisilaisasi nilai random dan menghandle error pada stream.
