@@ -37,4 +37,4 @@
 7. Jelaskan maksud kode langkah 13 sampai 15 tersebut!
    Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
    Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
-   >
+   > Kode langkah 13 sampai 15 digunakan untuk menghandle error pada `stream` melalui fungsi `addError()` pada stream. WKode `onError()` digunakan untuk menghandle error `stream`. Sedangkan `numberStream.addError()` digunakan untuk menginisialisasi error pada `stream`.
