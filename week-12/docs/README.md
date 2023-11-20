@@ -81,3 +81,6 @@
 13. Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
     Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
     Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
+    > ![Alt text](soal13.gif)
+    > Praktikum ini menjelaskan bagaimana menggunakan BLoC pattern pada flutter. Konsep BLoC terletak pada `random_bloc.dart` yang menghasilkan `stream` untuk random number. Pada `random_screen` digunakan variable `_bloc` untuk menginisialisasi `random_bloc` dan `StreamBuilder` untuk menghandle `stream` yang dihasilkan oleh `random_bloc`.
+    > Terdapat tombol refresh yang digunakan untuk menggenerate random number baru dengan mentrigger fungsi `sink` pada `_generateRandomController` pada `random_bloc.dart`.
