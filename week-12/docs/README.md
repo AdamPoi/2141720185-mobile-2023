@@ -68,3 +68,16 @@
     Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
     > ![Alt text](soal11.gif)
     > Hal itu terjadi karena terdapat dua listeners yang berbeda yaitu `subscription` dan `subscription2` yang menghandle stream yang sama sehingga akan `values` akan diubah oleh dua `listener` tersebut yang pada kasus ini perubahannya sama.
+
+# Praktikum 6: StreamBuilder
+
+12. Jelaskan maksud kode pada langkah 3 dan 7 ! Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
+    > ![Alt text](soal12.gif)
+    > Kode langkah 3 digunakan untuk membuat `stream` yang mengenerate random number.
+    > Kode langkah 7 digunakan untuk mengimplimentasikan `stream` menggunakan `StreamBuilder`. Jika stream mendapatkan data maka akan menampilkan `Text` dengan nilai `snapshot.data` dan jika terjadi error maka akan melakukan log.
+
+# Praktikum 7: BLoC Pattern
+
+13. Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+    Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+    Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
